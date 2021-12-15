@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
-import BookList from './BookList.js';
+import Booklist from './Booklist.js';
 
 let b = ['as', 'a', 'crow'];
 
 test('', () => {
-  const container = render(<BookList books={b} />);
+  const container = render(<Booklist books={b} />);
   expect(container).toMatchSnapshot();
 });
