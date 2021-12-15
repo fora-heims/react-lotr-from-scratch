@@ -2,8 +2,8 @@
 <!-- Take a close look at the characters code for fetching to determine how to connect it to your state variables. -->
 - [ ] On load, use fetch to hit a GET endpoint, get all items, and set state and update the view using the response.
 - [ ] Use useEffect hook with a dependency array to retrieve data when a component first mounts
-- [ ] Create the illusion of multiple pages in a Single Page Application routes by using react-router.
-- [ ] Create navigation on your application by adding `<NavLink>`s
+- [x] Create the illusion of multiple pages in a Single Page Application routes by using react-router.
+- [x] Create navigation on your application by adding `<NavLink>`s
 
 ### Description
 
