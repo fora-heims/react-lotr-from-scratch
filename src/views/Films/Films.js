@@ -6,7 +6,7 @@ export default function Films() {
   const [films, setFilms] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const filmData = fetchFilms();
+      const filmData = await fetchFilms();
       setFilms(filmData);
     };
     fetchData();
