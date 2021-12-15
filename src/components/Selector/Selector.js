@@ -18,7 +18,7 @@ export default function Selector(props) {
         type="text"
         placeholder="Search characters"
       ></input>
-      <button>Search</button>
+      <button onClick={props.handleClick}>Search</button>
     </div>
   );
 }
