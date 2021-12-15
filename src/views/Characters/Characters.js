@@ -16,7 +16,7 @@ export default function Characters() {
   }, [race, query]);
   return (
     <div>
-      <Selector query={query} setQuety={setQuery} race={race} setRace={setRace} />
+      <Selector query={query} setQuery={setQuery} race={race} setRace={setRace} />
       <CharacterList characters={characters} />
     </div>
   );
