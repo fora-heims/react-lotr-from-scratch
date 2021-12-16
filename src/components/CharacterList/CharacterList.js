@@ -4,7 +4,11 @@ export default function CharacterList(props) {
   return (
     <div>
       {props.characters.map((char) => {
-        return <span key={char.id}>{char.name}</span>;
+        return (
+          <div key={char.id}>
+            <span>{char.name}</span>
+          </div>
+        );
       })}
     </div>
   );

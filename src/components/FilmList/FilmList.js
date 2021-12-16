@@ -4,7 +4,11 @@ export default function FilmList(props) {
   return (
     <div>
       {props.films.map((film) => {
-        return <span key={film.id}>{film.title}</span>;
+        return (
+          <div key={film.id}>
+            <span>{film.title}</span>
+          </div>
+        );
       })}
     </div>
   );
