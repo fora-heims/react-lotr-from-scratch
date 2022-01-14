@@ -7,16 +7,29 @@ export default function Characters() {
   const [characters, setCharacters] = useState([]);
   const [race, setRace] = useState('All');
   const [query, setQuery] = useState('');
+
   useEffect(() => {
     const fetchData = async () => {
-      const characterData = await fetchCharacters(race, query);
+      const characterData = await fetchCharacters(race);
       setCharacters(characterData);
     };
     fetchData();
-  }, [race, query]);
+  }, [race]);
+
+  const handleClick = async () => {
+    const characterData = await fetchCharacters(race, query);
+    setCharacters(characterData);
+  };
+
   return (
     <div>
-      <Selector query={query} setQuety={setQuery} race={race} setRace={setRace} />
+      <Selector
+        handleClick={handleClick}
+        query={query}
+        setQuery={setQuery}
+        race={race}
+        setRace={setRace}
+      />
       <CharacterList characters={characters} />
     </div>
   );
